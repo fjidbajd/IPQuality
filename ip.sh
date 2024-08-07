@@ -86,7 +86,7 @@ declare usePROXY=""
 declare CurlARG=""
 declare UA_Browser
 declare Media_Cookie=$(curl $CurlARG -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/xykt/IPQuality/main/ref/cookies.txt")
-declare IATA_Database="https://raw.githubusercontent.com/xykt/IPQuality/main/ref/iata-icao.csv"
+declare IATA_Database="https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ref/iata-icao.csv"
 shelp_lines=(
 "IP QUALITY CHECK SCRIPT"
 "Usage: bash <(curl -sL IP.Check.Place) [-4] [-6] [-f] [-h] [-i eth0] [-l cn|en|jp|es|de|fr|ru|pt] [-x http://usr:pwd@proxyurl:p]"
