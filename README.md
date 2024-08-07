@@ -18,11 +18,9 @@
 
 ##### 默认双栈检测：
 ````bash
-bash <(curl -Ls IP.Check.Place)
+bash <(curl -L https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh)
 ````
-````bash
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh" && chmod 700 /root/install.sh && /root/install.sh
-````
+
 
 ##### 只检测IPv4结果：
 ````bash
