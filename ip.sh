@@ -1970,7 +1970,10 @@ echo -ne "\r$shelp\n"
 exit 0
 }
 show_ad(){
-
+asponsor=$()
+aad1=$()
+echo -e "$asponsor"
+echo -e "$aad1"
 }
 check_IP(){
 IP=$1
