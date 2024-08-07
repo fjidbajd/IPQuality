@@ -123,7 +123,6 @@ sinfo[lmail]=24
 sinfo[ldnsbl]=28
 shead[title]="IP QUALITY CHECK REPORT: "
 shead[ver]="Version: $script_version"
-shead[bash]="bash <(curl -s https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh)"
 shead[git]="https://github.com/fjidbajd/IPQuality"
 shead[time]=$(date -u +"Report Time: %Y-%m-%d %H:%M:%S UTC")
 shead[ltitle]=25
