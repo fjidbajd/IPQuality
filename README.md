@@ -12,8 +12,7 @@
 - 多邮局服务商 *Gmail / Outlook / Yahoo / Apple / QQ / Mail.ru / AOL / GMX / Mail.com / 163 / Sohu / Sina* 连通性检测
 - IP地址黑名单400+数据库检测
 
-##### 屏幕截图
-![截图](https://raw.githubusercontent.com/xykt/IPQuality/main/img/cn_IPv4.svg)
+
 
 ## 使用方法
 
