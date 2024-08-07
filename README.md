@@ -22,7 +22,7 @@
 bash <(curl -Ls IP.Check.Place)
 ````
 ````bash
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh" && chmod 700 /root/install.sh && /root/install.sh
 ````
 
 ##### 只检测IPv4结果：
