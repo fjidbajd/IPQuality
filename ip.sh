@@ -85,7 +85,7 @@ declare useNIC=""
 declare usePROXY=""
 declare CurlARG=""
 declare UA_Browser
-declare Media_Cookie=$(curl $CurlARG -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/xykt/IPQuality/main/ref/cookies.txt")
+declare Media_Cookie=$(curl $CurlARG -s --retry 3 --max-time 10 "https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ref/cookies.txt")
 declare IATA_Database="https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ref/iata-icao.csv"
 shelp_lines=(
 "IP QUALITY CHECK SCRIPT"
