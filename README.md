@@ -96,5 +96,4 @@ bash <(curl -Ls IP.Check.Place) -l jp|es|de|fr|ru|pt
 
 - 感谢[spiritLHLS](https://github.com/spiritLHLS/ecs)，本脚本局部代码参考融合怪测评脚本
 
-**Stars History:**
-![Stargazers over time](https://starchart.cc/xykt/IPQuality.svg?background=%23FFFFFF&axis=%23333333&line=%2377ff77)
+
