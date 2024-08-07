@@ -1970,10 +1970,7 @@ echo -ne "\r$shelp\n"
 exit 0
 }
 show_ad(){
-asponsor=$(curl -sL --max-time 5 "https://cdn.jsdelivr.net/gh/xykt/IPQuality@main/ref/sponsor.ans")
-aad1=$(curl -sL --max-time 5 "https://cdn.jsdelivr.net/gh/xykt/IPQuality@main/ref/ad1.ans")
-echo -e "$asponsor"
-echo -e "$aad1"
+
 }
 check_IP(){
 IP=$1
