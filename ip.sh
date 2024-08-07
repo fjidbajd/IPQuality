@@ -89,7 +89,7 @@ declare Media_Cookie=$(curl $CurlARG -s --retry 3 --max-time 10 "https://raw.git
 declare IATA_Database="https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ref/iata-icao.csv"
 shelp_lines=(
 "IP QUALITY CHECK SCRIPT"
-"Usage: bash <(curl -s IP.Check.Place) [-4] [-6] [-f] [-h] [-i eth0] [-l cn|en|jp|es|de|fr|ru|pt] [-x http://usr:pwd@proxyurl:p]"
+"Usage: bash <(curl -s https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh) [-4] [-6] [-f] [-h] [-i eth0] [-l cn|en|jp|es|de|fr|ru|pt] [-x http://usr:pwd@proxyurl:p]"
 "            -4                             Test IPv4"
 "            -6                             Test IPv6"
 "            -f                             Show full IP on reports"
@@ -123,8 +123,8 @@ sinfo[lmail]=24
 sinfo[ldnsbl]=28
 shead[title]="IP QUALITY CHECK REPORT: "
 shead[ver]="Version: $script_version"
-shead[bash]="bash <(curl -sL IP.Check.Place)"
-shead[git]="https://github.com/xykt/IPQuality"
+shead[bash]="bash <(curl -s https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh)"
+shead[git]="https://github.com/fjidbajd/IPQuality"
 shead[time]=$(date -u +"Report Time: %Y-%m-%d %H:%M:%S UTC")
 shead[ltitle]=25
 shead[ptime]=$(printf '%7s' '')
@@ -240,8 +240,8 @@ sinfo[lmail]=19
 sinfo[ldnsbl]=21
 shead[title]="IP质量体检报告："
 shead[ver]="脚本版本：$script_version"
-shead[bash]="bash <(curl -sL IP.Check.Place)"
-shead[git]="https://github.com/xykt/IPQuality"
+shead[bash]="bash <(curl -s https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ip.sh)"
+shead[git]="https://github.com/fjidbajd/IPQuality"
 shead[time]=$(TZ="Asia/Shanghai" date +"报告时间：%Y-%m-%d %H:%M:%S CST")
 shead[ltitle]=16
 shead[ptime]=$(printf '%8s' '')
@@ -1635,7 +1635,7 @@ local total=0
 local clean=0
 local blacklisted=0
 local other=0
-curl $CurlARG -s "https://raw.githubusercontent.com/xykt/IPQuality/main/ref/dnsbl.list"|sort -u|xargs -P "$parallel_jobs" -I {} bash -c "result=\$(dig +short \"$reversed_ip.{}\" A); if [[ -z \"\$result\" ]]; then echo 'Clean'; elif [[ \"\$result\" == '127.0.0.2' ]]; then echo 'Blacklisted'; else echo 'Other'; fi"|{
+curl $CurlARG -s "https://raw.githubusercontent.com/fjidbajd/IPQuality/main/ref/dnsbl.list"|sort -u|xargs -P "$parallel_jobs" -I {} bash -c "result=\$(dig +short \"$reversed_ip.{}\" A); if [[ -z \"\$result\" ]]; then echo 'Clean'; elif [[ \"\$result\" == '127.0.0.2' ]]; then echo 'Blacklisted'; else echo 'Other'; fi"|{
 while IFS= read -r line;do
 ((total++))
 case "$line" in
